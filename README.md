@@ -5,6 +5,9 @@ This sample projects demonstrates using conan to define boost dependency within 
 This repository can be used as a base project for all c++ development requiring boost and other third party libraries.
 
 ## Install conan
+The first 2 lines are to install conan in python virtual environemnt.  
+You can install conan globaly.  
+Global inatallation is just `pip install conan`, and no need for activation before build.
 
 ### Windows
 ```
