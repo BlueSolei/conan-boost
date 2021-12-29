@@ -16,14 +16,24 @@ pip install conan
 ### Linux\Mac
 ```
 python3 -m venv .venv
-source .venv\bin\activate
+source .venv/bin/activate
 pip install conan
 ```
 
 ## Build
 
+### Windows
 ```
 .venv\Scripts\activate.bat
+mkdir build && cd build
+conan install .. --build missing
+cmake .. 
+cmake --build .
+```
+
+### Linux\Mac
+```
+source .venv/bin/activate
 mkdir build && cd build
 conan install .. --build missing
 cmake .. 
